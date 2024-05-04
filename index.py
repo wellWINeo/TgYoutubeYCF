@@ -1,6 +1,7 @@
 from update_handler import handle_update
 from aiohttp import web
 from dotenv import load_dotenv
+from ycf import YCF
 
 
 async def handler(event, context):
@@ -13,7 +14,7 @@ async def handler(event, context):
 
 
 if __name__ == "__main__":
-    print("running outside YCF")
+    YCF.runningOutside()
 
     async def internal_handler(request: web.Request) -> web.StreamResponse:
         json = await request.json()

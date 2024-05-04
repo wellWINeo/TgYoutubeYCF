@@ -14,4 +14,6 @@ zip -r archive.zip . \
     -x ".git" \
     -x ".git/*" \
     -x ".env.dev" \
-    -x ".gitignore"
+    -x ".gitignore" \
+    -x ".DS_Store" \
+    -x "Dockerfile"
