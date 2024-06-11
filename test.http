@@ -1,0 +1,12 @@
+
+POST http://localhost:7080/
+Content-Type: application/json
+
+{
+    "message": {
+        "chat": {
+            "id": 123
+        },
+        "text": "https://youtube.com/shorts/HCSXEGrWlVs?si=uBOsFlf2xzvku1wF"
+    }
+}
